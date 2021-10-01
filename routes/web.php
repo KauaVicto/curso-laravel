@@ -20,12 +20,15 @@ Route::get('/', function () {
 
     $nums = [14, 22, 354, 41, 55];
 
+    $nomes = ['Layla', 'Kauã', 'João', 'José'];
+
     return view('welcome', 
     [
     'nome' => $nome, 
     'idade' => $idade, 
     'profissao' => 'Bancária',
-    'arr' => $nums
+    'arr' => $nums,
+    'nomes' => $nomes
     ]);
 });
 
