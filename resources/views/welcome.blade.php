@@ -1,47 +1,40 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'HDC Events')
 
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <h1>alguma coisa</h1>
-        <img src="/img/banner.jpg" alt="Banner">
-        @if(10 < 5)
-            <p>Verdadeiro</p>
-        @endif
+@section('content')
 
-        <p>{{ $nome }}</p>
+<h1>alguma coisa</h1>
+<img src="/img/banner.jpg" alt="Banner">
+@if(10 < 5)
+    <p>Verdadeiro</p>
+@endif
 
-        @if($nome == 'Layla')
-            <p>O nome é {{$nome}} e possui {{$idade}} anos, trabalha como {{$profissao}}.</p>
-        @else
-            <p>O nome não é {{$nome}}</p>
-        @endif
+<p>{{ $nome }}</p>
 
-        @for($i = 0;$i < count($arr); $i++)
-            <p>{{$i}} - {{$arr[$i] }}</p>
-            @if($i == 2)
-                <p>i é 2</p>
-            @endif
-        @endfor
+@if($nome == 'Layla')
+    <p>O nome é {{$nome}} e possui {{$idade}} anos, trabalha como {{$profissao}}.</p>
+@else
+    <p>O nome não é {{$nome}}</p>
+@endif
 
-        @foreach($nomes as $nome)
-            <p>{{$loop->index}} - {{ $nome }}</p>
-        @endforeach
+@for($i = 0;$i < count($arr); $i++)
+    <p>{{$i}} - {{$arr[$i] }}</p>
+    @if($i == 2)
+        <p>i é 2</p>
+    @endif
+@endfor
 
-        @php
-            $valor = 12;
-            echo $valor;
-        @endphp
+@foreach($nomes as $nome)
+    <p>{{$loop->index}} - {{ $nome }}</p>
+@endforeach
 
-        <!-- Comentário html -->
-        {{-- Comentário do blade --}}
+@php
+    $valor = 12;
+    echo $valor;
+@endphp
 
-        <script src="/js/script.js"></script>
-    </body>
-</html>
+<!-- Comentário html -->
+{{-- Comentário do blade --}}
+
+@endsection
