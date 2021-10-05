@@ -35,6 +35,16 @@ header {
     border-color: #c28008;
 }
 
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 h1 {
     color: #505050;
 }
@@ -101,11 +111,11 @@ h1 {
 }
 
 #events-container .card {
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img {
@@ -161,4 +171,39 @@ footer p {
 
 .form-group {
     margin: 20px 0;
+}
+
+/* Event page */
+
+.row > div{
+    margin-top: 20px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container img{
+    height: 22px;
+    margin-right: 5px;
+}
+
+#info-container #event-submit{
+    margin: 20px 0;
+}
+
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
 }
