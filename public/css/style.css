@@ -78,6 +78,7 @@ h1 {
     height: 400px;
     padding: 50px;
     text-align: center;
+    margin: 0;
 }
 
 #search-container h1 {
@@ -171,6 +172,15 @@ footer p {
 
 .form-group {
     margin: 20px 0;
+}
+
+.form-group.checkbox .form-group{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input{
+    margin-right: 10px;
 }
 
 /* Event page */
