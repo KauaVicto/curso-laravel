@@ -213,6 +213,11 @@ footer p {
     margin: 20px 0;
 }
 
+#info-container ul{
+    list-style: none;
+    list-style-image: url('/img/icons/play-outline.svg');
+}
+
 #description-container h3{
     font-size: 20px;
     font-weight: bold;

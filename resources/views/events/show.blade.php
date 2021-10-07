@@ -15,6 +15,12 @@
                 <p class="events-participants"><img src="/img/icons/people-outline.svg" alt="Icone Participante"> X Participantes</p>
                 <p class="event-owner"><img src="/img/icons/star-outline.svg" alt="Icone Estrela"> Dono do Evento</p>
                 <a href="#" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
+                <h3>infraestrutura:</h3>
+                <ul>
+                    @foreach($event->items as $item)
+                        <li>{{ $item }}</li>
+                    @endforeach
+                </ul>
         </div>
         <div class="col-md-12" id="description-container">
             <h3>Sobre o Evento:</h3>
